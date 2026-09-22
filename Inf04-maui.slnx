@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Inf04-maui/Zadanie 3.csproj">
+    <Deploy Solution="Debug|*" />
+  </Project>
+</Solution>
