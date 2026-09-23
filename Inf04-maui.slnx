@@ -2,4 +2,10 @@
   <Project Path="Inf04-maui/Zadanie 3.csproj">
     <Deploy Solution="Debug|*" />
   </Project>
+  <Project Path="Zadanie 4/Zadanie 4.csproj" Id="5751c4ad-ca6b-4c12-a824-4b84703a175d">
+    <Deploy Solution="Debug|*" />
+  </Project>
+  <Project Path="Zadanie 5/Zadanie 5.csproj" Id="4973660b-e83a-47d5-8478-668030832b5d">
+    <Deploy Solution="Debug|*" />
+  </Project>
 </Solution>

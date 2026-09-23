@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Zadanie_5.MainPage">
+
+    <ScrollView>
+		<VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+			<Label
+                Text="Ocena: 3"
+				x:Name="Grade"
+				FontSize="26"
+				FontAttributes="Bold"
+				TextColor="#fe00aa"
+                SemanticProperties.HeadingLevel="Level1" />
+			<Slider
+				x:Name="GradeSlider"
+				Minimum="1"
+				Maximum="6"
+				Value="3"
+				ValueChanged="onValueChange"
+				/>
+		</VerticalStackLayout>
+	</ScrollView>
+
+</ContentPage>
