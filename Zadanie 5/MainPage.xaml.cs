@@ -12,8 +12,6 @@
         private void onValueChange(object? sender, EventArgs e)
         {
                 Grade.Text = $"Ocena: {Math.Round(GradeSlider.Value)}";
-
-
         }
     }
 }

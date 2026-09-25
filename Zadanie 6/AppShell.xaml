@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Shell
-    x:Class="Zadanie_5.AppShell"
+    x:Class="Zadanie_6.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:Zadanie_5"
-    Title="Numer zdajacego 32">
+    xmlns:local="clr-namespace:Zadanie_6"
+    Title="Zadanie_6">
 	<TabBar>
-		<Tab Title="zadanie 5.2">
+		<Tab Title="Zadanie 6.2">
 			<ShellContent
-        Title="numer zdajacego 32"
+        Title="Numer zdającego: 32"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 		</Tab>
-		<Tab Title="Zadanie 5.3">
+		<Tab Title="Zadanie 6.3">
 			<ShellContent
-				Title="Numer zdajacego 32"
+				Title="Numer zdającego: 32"
 				ContentTemplate="{DataTemplate local:NewPage1}"
-				Route="NewPage1"
-				/>
+				Route="NewPage1" />
 		</Tab>
 	</TabBar>
 </Shell>

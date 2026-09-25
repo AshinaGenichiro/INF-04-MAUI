@@ -8,4 +8,10 @@
   <Project Path="Zadanie 5/Zadanie 5.csproj" Id="4973660b-e83a-47d5-8478-668030832b5d">
     <Deploy Solution="Debug|*" />
   </Project>
+  <Project Path="Zadanie 6/Zadanie 6.csproj" Id="d0c835da-31f7-4000-a8f3-7f88811cae3b">
+    <Deploy Solution="Debug|*" />
+  </Project>
+  <Project Path="Zadanie 7/Zadanie 7.csproj" Id="74f00755-b4b0-4b27-a2c7-d1c5258d593f">
+    <Deploy Solution="Debug|*" />
+  </Project>
 </Solution>
