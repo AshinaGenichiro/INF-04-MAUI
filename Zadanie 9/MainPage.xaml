@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Zadanie_9.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+			<Entry
+				x:Name="ListEntry"
+				Placeholder="Wprowadź element listy"
+				/>
+			<Button
+				x:Name="AddButton"
+				Clicked="AddTask"
+				Text="Dodaj"
+				/>
+			<CollectionView x:Name="lista"
+							SelectionMode="Single">
+				<CollectionView.ItemTemplate >
+					<DataTemplate>
+						<Label
+							FontSize="20"
+							Text="{Binding .}"
+							/>
+					</DataTemplate>
+				</CollectionView.ItemTemplate>
+			</CollectionView>
+			<Button
+				x:Name="RemoveButton"
+				Clicked="RemoveTask"
+				Text="Usuń"
+				/>
+			<Label
+				FontSize="24"
+				FontFamily="bold"
+				Text = "Liczba zadań: 0"
+				x:Name="ResultLabel"
+				/>
+		</VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
