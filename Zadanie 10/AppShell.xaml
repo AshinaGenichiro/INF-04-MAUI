@@ -5,10 +5,21 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Zadanie_10"
     Title="Zadanie_10">
-
-    <ShellContent
+	<TabBar>
+		<Tab Title="Zadanie 10.1">
+			
+	<ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
+		</Tab>
+		<Tab Title="Zadanie 10.2">
+		<ShellContent
+		Title="Home"
+		ContentTemplate="{DataTemplate local:NewPage1}"
+		Route="NewPage1" />
 
+		</Tab>
+
+	</TabBar>
 </Shell>
