@@ -5,6 +5,11 @@
   <Project Path="Zadanie 10/Zadanie 10.csproj" Id="a091c740-0d3d-4de1-925a-056f88805d60">
     <Deploy Solution="Debug|*" />
   </Project>
+  <Project Path="Zadanie 11/Zadanie 11.csproj" Id="e5beeb41-6853-412e-81c7-762c802e8496">
+    <Deploy Solution="Debug|*" />
+  </Project>
+  <Project Path="Zadanie 12/Zadanie 12.csproj" Id="894e1805-f6da-47f8-abac-8784b2d4e90a" />
+  <Project Path="Zadanie 13/Zadanie 13.csproj" Id="abc232fd-a4f9-4eb7-9ed4-95f36b543959" />
   <Project Path="Zadanie 4/Zadanie 4.csproj" Id="5751c4ad-ca6b-4c12-a824-4b84703a175d">
     <Deploy Solution="Debug|*" />
   </Project>

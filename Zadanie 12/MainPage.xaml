@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Zadanie_12.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+			BackgroundColor="#5F9EA0"
+			>
+            <Entry
+                x:Name="Numer"
+                Placeholder="Wpisz numer"
+				BackgroundColor="#F0FFFF"
+				TextChanged="OnNumberTextChanged"
+            />
+			<Entry
+                x:Name="Imie"
+                Placeholder="Wpisz imię"
+				BackgroundColor="#F0FFFF"
+            />
+			<Entry
+                x:Name="Nazwisko"
+                Placeholder="Wpisz nazwisko"
+			    BackgroundColor="#F0FFFF"
+            />
+			<RadioButton
+                x:Name="niebieskie"
+                Content="Niebieskie"
+                GroupName="EyeColor"
+            />
+			<RadioButton
+                x:Name="zielone"
+                Content="Zielone"
+                GroupName="EyeColor"
+            />
+			<RadioButton
+                x:Name="piwne"
+                Content="piwne"
+                GroupName="EyeColor"
+            />
+			<Button
+                Text="OK"
+			    BackgroundColor="#F0FFFF"
+            />
+			<Image
+                x:Name="Image"
+                Source="ae86.jpg"
+				HeightRequest="180"
+            />
+			<Image
+                x:Name="Image2"
+                Source="lada.jpg"
+                HeightRequest="180"
+			/>
+
+		</VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

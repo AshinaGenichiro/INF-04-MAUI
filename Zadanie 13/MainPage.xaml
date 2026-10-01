@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Zadanie_13.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+			<RadioButton
+                x:Name="Pocztówka"
+                Content="Pocztówka"
+                GroupName="PackageType"
+			    IsChecked="True"
+		    />
+			<RadioButton
+				x:Name="List"
+				Content="List"
+				GroupName="PackageType"
+			/>
+			<RadioButton
+                x:Name="Poczta"
+                Content="Poczta"
+                GroupName="PackageType"
+            />
+			<Grid
+				RowDefinitions="Auto, Auto, Auto"
+				ColumnDefinitions="Auto,Auto,Auto"
+				>
+				<Label
+					Grid.Row="0"
+					Grid.Column="0"
+					Text="Ulica z numerem"
+				/>
+				<Entry
+					Grid.Row="0"
+					Grid.Column="1"
+					x:Name="Ulica"
+					Placeholder="Wpisz ulice z numerem"
+				/>
+				<Label
+					Grid.Row="1"
+					Grid.Column="0"
+					Text="Kod pocztowy"
+				/>
+				<Entry
+					Grid.Row="1"
+					Grid.Column="1"
+					x:Name="KodPocztowy"
+					Placeholder="Wpisz kod pocztowy"
+				/>
+				<Label
+					Grid.Row="2"
+					Grid.Column="0"
+					Text="Miasto"
+				/>
+				<Entry
+					Grid.Row="2"
+					Grid.Column="1"
+					x:Name="Miasto"
+					Placeholder="Wpisz miasto"
+				/>
+			</Grid>
+			<Button
+				Text="Sprawdź cene"
+			/>
+			<Label
+				x:Name="Cena"
+				Text="Cena"
+				FontSize="20"
+				FontFamily="bold"
+			/>
+			<Button
+				Text="Zatwierdz"
+			/>	
+			
+		</VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
