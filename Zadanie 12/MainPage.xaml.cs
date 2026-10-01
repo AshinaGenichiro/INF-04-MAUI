@@ -1,4 +1,4 @@
-﻿using Windows.ApplicationModel.VoiceCommands;
+﻿
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Zadanie_12
@@ -8,13 +8,6 @@ namespace Zadanie_12
         public MainPage()
         {
             InitializeComponent();
-        }
-        public void OnNumberTextChanged(object sender, TextChangedEventArgs e)
-        {
-            string entryText = numberEntry.Text;
-            
-
-
         }
 
     }

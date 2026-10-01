@@ -19,10 +19,15 @@
 				GroupName="PackageType"
 			/>
 			<RadioButton
-                x:Name="Poczta"
-                Content="Poczta"
+                x:Name="Paczka"
+                Content="Paczka"
                 GroupName="PackageType"
             />
+			<RadioButton
+				x:Name="Polecony"
+				Content="Polecony"
+				GroupName="PackageType"
+			/>
 			<Grid
 				RowDefinitions="Auto, Auto, Auto"
 				ColumnDefinitions="Auto,Auto,Auto"
@@ -47,7 +52,7 @@
 					Grid.Row="1"
 					Grid.Column="1"
 					x:Name="KodPocztowy"
-					Placeholder="Wpisz kod pocztowy"
+					Placeholder="Schemat: 22-400"
 				/>
 				<Label
 					Grid.Row="2"
@@ -63,15 +68,22 @@
 			</Grid>
 			<Button
 				Text="Sprawdź cene"
+				Clicked="OnCheckPriceButtonClicked"
 			/>
 			<Label
-				x:Name="Cena"
+				x:Name="Price"
 				Text="Cena"
 				FontSize="20"
 				FontFamily="bold"
 			/>
+			<Image
+				x:Name="parcelPhoto"
+				MaximumHeightRequest="180"
+				
+				/>
 			<Button
 				Text="Zatwierdz"
+				Clicked="onConfirmButtonClicked"
 			/>	
 			
 		</VerticalStackLayout>
