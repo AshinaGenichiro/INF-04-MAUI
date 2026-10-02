@@ -3,59 +3,128 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Zadanie_12.MainPage">
 
-    <ScrollView>
-        <VerticalStackLayout
-            Padding="30,0"
-            Spacing="25"
-			BackgroundColor="#5F9EA0"
-			>
-            <Entry
-                x:Name="Numer"
-                Placeholder="Wpisz numer"
-				BackgroundColor="#F0FFFF"
-				TextChanged="OnNumberTextChanged"
-            />
-			<Entry
-                x:Name="Imie"
-                Placeholder="Wpisz imię"
-				BackgroundColor="#F0FFFF"
-            />
-			<Entry
-                x:Name="Nazwisko"
-                Placeholder="Wpisz nazwisko"
-			    BackgroundColor="#F0FFFF"
-            />
-			<RadioButton
-                x:Name="niebieskie"
-                Content="Niebieskie"
-                GroupName="EyeColor"
-            />
-			<RadioButton
-                x:Name="zielone"
-                Content="Zielone"
-                GroupName="EyeColor"
-            />
-			<RadioButton
-                x:Name="piwne"
-                Content="piwne"
-                GroupName="EyeColor"
-            />
-			<Button
-                Text="OK"
-			    BackgroundColor="#F0FFFF"
-            />
-			<Image
-                x:Name="Image"
-                Source="ae86.jpg"
-				HeightRequest="180"
-            />
-			<Image
-                x:Name="Image2"
-                Source="lada.jpg"
-                HeightRequest="180"
-			/>
+	<ScrollView>
+
+		<VerticalStackLayout Padding="20" Spacing="15">
+
+
+
+			Formularz z etykietami i polami edycyjnymi
+
+			<Grid ColumnDefinitions="Auto, *" 
+
+     RowDefinitions="Auto, Auto, Auto" 
+
+     ColumnSpacing="10" 
+
+     RowSpacing="10">
+
+
+
+				<Label Text="Numer" 
+
+      VerticalOptions="Center" 
+
+      Grid.Row="0" Grid.Column="0" />
+
+				<Entry x:Name="poleNumer" 
+
+      BackgroundColor="#F0FFFF" 
+
+      Unfocused="NumerOpuszczony" 
+
+      Grid.Row="0" Grid.Column="1" />
+
+
+
+				<Label Text="Imie" 
+
+      VerticalOptions="Center" 
+
+      Grid.Row="1" Grid.Column="0" />
+
+				<Entry x:Name="poleImie" 
+
+      BackgroundColor="#F0FFFF" 
+
+      Grid.Row="1" Grid.Column="1" />
+
+
+
+				<Label Text="Nazwisko" 
+
+      VerticalOptions="Center" 
+
+      Grid.Row="2" Grid.Column="0" />
+
+				<Entry x:Name="poleNazwisko" 
+
+      BackgroundColor="#F0FFFF" 
+
+      Grid.Row="2" Grid.Column="1" />
+
+			</Grid>
+
+
+
+			Grupa pol wyboru koloru oczu
+
+			<Label Text="Kolor oczu" 
+
+     FontAttributes="Bold" />
+
+			<RadioButton x:Name="oczyNiebieskie" 
+
+       Content="niebieskie" 
+
+       GroupName="kolorOczu" 
+
+       IsChecked="True" />
+
+			<RadioButton x:Name="oczyZielone" 
+
+       Content="zielone" 
+
+       GroupName="kolorOczu" />
+
+			<RadioButton x:Name="oczyPiwne" 
+
+       Content="piwne" 
+
+       GroupName="kolorOczu" />
+
+
+
+			Przycisk zatwierdzenia danych
+
+			<Button Text="OK" 
+
+     BackgroundColor="#F0FFFF" 
+
+     TextColor="Black" 
+
+     Clicked="ZatwierdzDane" />
+
+
+
+			Dwa obrazy o jednakowej wysokosci 180
+
+			<HorizontalStackLayout Spacing="20">
+
+				<Image x:Name="obrazZdjecie" 
+
+      HeightRequest="180" />
+
+				<Image x:Name="obrazOdcisk" 
+
+      HeightRequest="180" />
+
+			</HorizontalStackLayout>
+
+
 
 		</VerticalStackLayout>
-    </ScrollView>
+
+	</ScrollView>
 
 </ContentPage>
