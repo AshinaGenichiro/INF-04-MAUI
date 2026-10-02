@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Zadanie_5.NewPage1"
+             Title="NewPage1">
+    <VerticalStackLayout>
+		<Picker
+			x:Name="sale"
+			Title="Wybierz sale"
+			SelectedIndexChanged="onSaleChanged">
+			
+			<Picker.Items>
+				<x:String>Sala A</x:String>
+				<x:String>Sala B</x:String>
+				<x:String> Sala C</x:String>
+			</Picker.Items>
+		</Picker>
+		<HorizontalStackLayout>
+			
+		<Stepper
+			x:Name="LiczbaOsob"
+			Minimum="1"
+			Maximum="50"
+			Increment="1"
+			Value="1"
+			ValueChanged="OnIloscOsobChanged"
+			/>
+			<Label
+				x:Name="LabelLiczbaOs"
+				Text="Ilosc osob: 1"
+				/>
+		</HorizontalStackLayout>
+		<DatePicker
+			x:Name="wyborDaty"
+			Format="dd.MM.yyyy"
+
+			/>
+		<Button
+			Text="Zarezerwuj"
+			x:Name="bookButton"
+			BackgroundColor="LightBlue"
+			Clicked="OnBookButtonClicked"
+			/>
+		<Label
+			x:Name="Podsumowanie"
+			/>
+	</VerticalStackLayout>
+</ContentPage>

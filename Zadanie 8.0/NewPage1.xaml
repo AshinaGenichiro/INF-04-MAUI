@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Zadanie_8._0.NewPage1"
+             Title="NewPage1">
+    <VerticalStackLayout>
+		<Entry
+			x:Name="WidthEntry"
+			Placeholder="Wpisze szerokość"
+			/>
+		<Entry
+			x:Name="HeightEntry"
+			Placeholder="Wpisze wysokość"
+			/>
+		<Button
+			x:Name="CalculateButton"
+			Margin="10"
+			Text="Oblicz"
+			Clicked="CalculateButtonClicked" 
+			/>
+		<Button
+			Margin="10"
+			x:Name="ClearButton"
+			Text="Wyczyść"
+			Clicked="ClearButtonClicked" 
+			/>
+	</VerticalStackLayout>
+</ContentPage>
