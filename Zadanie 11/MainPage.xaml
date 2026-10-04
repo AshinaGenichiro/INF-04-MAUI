@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Zadanie_11.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+			BackgroundColor="#FFF8DC"
+            Padding="30,0"
+            Spacing="25">
+			<Grid>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto"/>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="Auto"/>
+				</Grid.ColumnDefinitions>
+				<BoxView
+					Grid.Row="0"
+					Grid.ColumnSpan="3"
+					x:Name="showColorBox"
+					Color="White"
+					HeightRequest="120"
+				/>
+				<Label
+					Grid.Row="1"
+					Grid.ColumnSpan="3"
+					Text="Dobierz kolor suwak i zapisz przyciskiem "
+				/>
+				<Label
+					Grid.Row="2"
+					Grid.Column="0"
+					Text="R:"/>
+				<Slider
+					Grid.Row="2"
+					Grid.Column="1"
+					x:Name="RedSlider"
+					Minimum="0"
+					ValueChanged="onSliderChanged"
+					Maximum="255"
+					Value="255"
+				/>
+				<Label
+					Grid.Column="2"
+					Grid.Row="2"
+					Text="{Binding Source = {x:Reference RedSlider}, Path=Value, StringFormat='{0:F0}'}"
+				/>
+
+
+				<Label
+					Grid.Row="3"
+					Grid.Column="0"
+					Text="G:"
+				/>
+				<Slider
+					Grid.Row="3"
+					Grid.Column="1"
+					x:Name="GreenSlider"
+					ValueChanged="onSliderChanged"
+					
+					Minimum="0"
+					Maximum="255"
+					Value="255"
+				/>
+				<Label
+					Grid.Row="3"
+					Grid.Column="2"
+					Text="{Binding Source = {x:Reference GreenSlider}, Path=Value,StringFormat='{0:F0}'}"
+				/>
+
+				
+				<Label
+					Grid.Row="4"
+					Grid.Column="0"
+					Text="B:"
+				/>
+				<Slider
+					Grid.Row="4"
+					Grid.Column="1"
+					x:Name="BlueSlider"
+					ValueChanged="onSliderChanged"
+					Minimum="0"
+					Maximum="255"
+					Value="255"
+					MinimumWidthRequest="50"
+				/>
+				<Label
+					Grid.Row="4"
+					Grid.Column="2"
+					Text="{Binding Source = {x:Reference BlueSlider}, Path=Value,StringFormat='{0:F0}'}"
+				/>
+
+				<Button
+					Grid.Row="5"
+					Grid.ColumnSpan="3"
+					Text="Pobierz"
+					Clicked="ButtonClicked"
+					BackgroundColor="#CD853F"
+					/>
+			</Grid>
+			<Label
+				x:Name="showColorLabel"
+				BackgroundColor="White"
+				Padding="5"
+				Text="255, 255, 255"
+				FontSize="20"
+				HorizontalOptions="Center"
+				/>
+			<Label
+				x:Name="showColorHexLabel"
+				Padding="5"
+				Text="#FFFFFFFF"
+				FontSize="20"
+				HorizontalOptions="Center"
+				/>
+			<CollectionView
+				x:Name="colorHistoryCollection">
+				
+				
+			</CollectionView>
+
+		</VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
