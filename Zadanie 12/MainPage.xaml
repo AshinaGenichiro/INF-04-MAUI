@@ -8,10 +8,9 @@
 		<VerticalStackLayout Padding="20" Spacing="15">
 
 
+            <Label Text="Formularz z etykietami i polami edycyjnymi" />
 
-			Formularz z etykietami i polami edycyjnymi
-
-			<Grid ColumnDefinitions="Auto, *" 
+            <Grid ColumnDefinitions="Auto, *" 
 
      RowDefinitions="Auto, Auto, Auto" 
 
@@ -32,7 +31,7 @@
       BackgroundColor="#F0FFFF" 
 
       Unfocused="NumerOpuszczony" 
-
+        TextColor="Black"
       Grid.Row="0" Grid.Column="1" />
 
 
@@ -46,6 +45,7 @@
 				<Entry x:Name="poleImie" 
 
       BackgroundColor="#F0FFFF" 
+        TextColor="Black"
 
       Grid.Row="1" Grid.Column="1" />
 
@@ -60,16 +60,17 @@
 				<Entry x:Name="poleNazwisko" 
 
       BackgroundColor="#F0FFFF" 
-
+        TextColor="Black"
+    
       Grid.Row="2" Grid.Column="1" />
 
 			</Grid>
 
 
 
-			Grupa pol wyboru koloru oczu
+            <Label Text="Grupa pól wyboru koloru oczu" />
 
-			<Label Text="Kolor oczu" 
+            <Label Text="Kolor oczu" 
 
      FontAttributes="Bold" />
 
@@ -92,24 +93,33 @@
        Content="piwne" 
 
        GroupName="kolorOczu" />
+            <RadioButton x:Name="oczySzare"
+             Content="szare"
+             GroupName="kolorOczu" />
+
+
+            <Label Text="Przycisk zatwierdzenia danych" />
+
+            <HorizontalStackLayout Spacing="10">
+
+                <Button Text="OK"
+            BackgroundColor="#F0FFFF"
+            TextColor="Black"
+            Clicked="ZatwierdzDane" />
+
+                <Button Text="Wyczyść"
+            BackgroundColor="#F0FFFF"
+            TextColor="Black"
+            Clicked="WyczyscDane" />
+
+            </HorizontalStackLayout>
 
 
 
-			Przycisk zatwierdzenia danych
 
-			<Button Text="OK" 
+            <Label Text="Dwa obrazy o jednakowej wysokości 180" />
 
-     BackgroundColor="#F0FFFF" 
-
-     TextColor="Black" 
-
-     Clicked="ZatwierdzDane" />
-
-
-
-			Dwa obrazy o jednakowej wysokosci 180
-
-			<HorizontalStackLayout Spacing="20">
+            <HorizontalStackLayout Spacing="20">
 
 				<Image x:Name="obrazZdjecie" 
 

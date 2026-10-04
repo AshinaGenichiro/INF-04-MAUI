@@ -2,6 +2,9 @@
   <Project Path="Inf04-maui/Zadanie 3.csproj">
     <Deploy Solution="Debug|*" />
   </Project>
+  <Project Path="Zadanie 1/Zadanie 1.csproj" Id="b069796e-9274-4596-a421-137555dbfe82">
+    <Deploy Solution="Debug|*" />
+  </Project>
   <Project Path="Zadanie 10/Zadanie 10.csproj" Id="a091c740-0d3d-4de1-925a-056f88805d60">
     <Deploy Solution="Debug|*" />
   </Project>
@@ -16,6 +19,9 @@
     <Deploy Solution="Debug|*" />
   </Project>
   <Project Path="Zadanie 15/Zadanie 15.csproj" Id="69160d48-d05e-4b64-b405-2b69b754f492">
+    <Deploy Solution="Debug|*" />
+  </Project>
+  <Project Path="Zadanie 2/Zadanie 2.csproj" Id="c8d70595-562e-4279-9e5b-d69757df5bc8">
     <Deploy Solution="Debug|*" />
   </Project>
   <Project Path="Zadanie 4/Zadanie 4.csproj" Id="5751c4ad-ca6b-4c12-a824-4b84703a175d">
